@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-# Sitemap will be added when the production hostname is connected.
+Sitemap: https://savioronezero.github.io/slangback-website/sitemap.xml
