@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+# Sitemap will be added when the production hostname is connected.
