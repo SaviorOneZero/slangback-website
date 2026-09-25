@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://savioronezero.github.io/slangback-website/sitemap.xml
+Sitemap: https://slangback.sync33.com/sitemap.xml

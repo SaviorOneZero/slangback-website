@@ -23,7 +23,9 @@ The iOS Tinted AppIcon is intentionally not used on the web: browsers do not pro
 
 ## Deployment
 
-GitHub Pages publishes the repository root from `main` at <https://savioronezero.github.io/slangback-website/>.
+The canonical site is independently deployed on Vercel at <https://slangback.sync33.com/>. GitHub Pages continues to publish the repository root from `main` at <https://savioronezero.github.io/slangback-website/> as a compatible legacy entry point. Its canonical metadata points to the Sync33 domain.
+
+Run `node --test tests/static-site.test.mjs` before publishing. The test is also enforced in pull requests and on `main`.
 
 Before the app is released:
 

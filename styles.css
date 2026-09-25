@@ -24,6 +24,12 @@ body {
   min-height: 100vh;
 }
 
+p,
+li,
+footer {
+  overflow-wrap: anywhere;
+}
+
 a {
   color: inherit;
   text-underline-offset: 0.18em;
@@ -262,6 +268,12 @@ footer {
 @media (max-width: 720px) {
   .site-header {
     min-height: 72px;
+    flex-wrap: wrap;
+    padding-block: 12px;
+  }
+
+  .site-header nav {
+    flex-wrap: wrap;
   }
 
   .hero {
