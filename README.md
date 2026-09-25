@@ -10,6 +10,17 @@ Lightweight static website for Slangback.
 
 The site is plain HTML and CSS. It has no framework, JavaScript, analytics, cookies, external fonts, or build step.
 
+## Brand assets
+
+The app's 1024px Light and Dark AppIcon artwork is the source for the website's homepage artwork and web icons.
+
+- `assets/app-icon-light.png` and `assets/app-icon-dark.png` are 512px homepage assets. The Light version is also the social sharing image.
+- `assets/brand-mark-light.png` and `assets/brand-mark-dark.png` are transparent 180px derivatives for the site header.
+- `assets/favicon-light.png` and `assets/favicon-dark.png` are transparent 32px browser icons.
+- `assets/apple-touch-icon.png` is an opaque 180px Light icon so iOS can apply its own mask cleanly.
+
+The iOS Tinted AppIcon is intentionally not used on the web: browsers do not provide an equivalent system tint treatment, so either the Light or Dark artwork is more faithful in every supported website context.
+
 ## Deployment
 
 GitHub Pages publishes the repository root from `main` at <https://savioronezero.github.io/slangback-website/>.

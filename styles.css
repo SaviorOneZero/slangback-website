@@ -4,8 +4,8 @@
   --text: #171717;
   --muted: #66635d;
   --line: #d8d4cb;
-  --accent: #c73312;
-  --focus: #4f2e9e;
+  --accent: #075bd8;
+  --focus: #075bd8;
 }
 
 * {
@@ -108,8 +108,29 @@ nav a[aria-current="page"] {
 }
 
 .hero {
-  max-width: 850px;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) clamp(220px, 24vw, 320px);
+  align-items: center;
+  gap: clamp(40px, 7vw, 92px);
   padding: clamp(80px, 13vw, 170px) 0;
+}
+
+.hero-copy {
+  max-width: 780px;
+}
+
+.hero-art {
+  display: block;
+  width: 100%;
+  transform: rotate(1.5deg);
+}
+
+.hero-art img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 22%;
+  box-shadow: 0 24px 60px rgb(18 57 111 / 18%);
 }
 
 .eyebrow,
@@ -125,7 +146,7 @@ nav a[aria-current="page"] {
 
 .hero h1 {
   margin: 0;
-  font-size: clamp(3.2rem, 9vw, 7.5rem);
+  font-size: clamp(3.2rem, 7vw, 6.5rem);
   line-height: 0.88;
   letter-spacing: -0.065em;
 }
@@ -244,7 +265,14 @@ footer {
   }
 
   .hero {
+    grid-template-columns: 1fr;
+    gap: 46px;
     padding: 82px 0 88px;
+  }
+
+  .hero-art {
+    width: 112px;
+    transform: rotate(2deg);
   }
 
   .lede {
@@ -308,11 +336,15 @@ footer {
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --bg: #121212;
-    --text: #f5f3ee;
-    --muted: #aaa69d;
-    --line: #34322e;
-    --accent: #ff6e42;
-    --focus: #b89cff;
+    --bg: #0c1721;
+    --text: #f5f6f8;
+    --muted: #a8b1bd;
+    --line: #2c3a47;
+    --accent: #ffbf2f;
+    --focus: #76aaff;
+  }
+
+  .hero-art img {
+    box-shadow: 0 24px 68px rgb(0 0 0 / 42%);
   }
 }
